@@ -12206,7 +12206,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12261,7 +12261,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -12355,7 +12355,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv2d_maxpool</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">):</span>
@@ -12428,7 +12428,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">):</span>
@@ -12480,7 +12480,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fully_conn</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12491,7 +12491,7 @@ Keep Prob Tests Passed.
 <span class="sd">    : return: A 2-D tensor where the second dimension is num_outputs.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">,</span> <span class="n">activation_fn</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">)</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12534,7 +12534,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12595,7 +12595,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv_net</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">):</span>
@@ -12712,7 +12712,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train_neural_network</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">keep_probability</span><span class="p">,</span> <span class="n">feature_batch</span><span class="p">,</span> <span class="n">label_batch</span><span class="p">):</span>
@@ -12771,7 +12771,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[180]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_stats</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">feature_batch</span><span class="p">,</span> <span class="n">label_batch</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">):</span>
@@ -12825,11 +12825,11 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Tune Parameters</span>
-<span class="n">epochs</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="n">keep_probability</span> <span class="o">=</span> <span class="mf">0.8</span>
 </pre></div>
@@ -12851,7 +12851,7 @@ Keep Prob Tests Passed.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[182]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12884,106 +12884,46 @@ Keep Prob Tests Passed.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Checking the Training on a Single Batch...
-Epoch  1, CIFAR-10 Batch 1:  2.27663
-0.1152
-Epoch  2, CIFAR-10 Batch 1:  2.055
-0.261
-Epoch  3, CIFAR-10 Batch 1:  1.7623
-0.3718
-Epoch  4, CIFAR-10 Batch 1:  1.56615
-0.3856
-Epoch  5, CIFAR-10 Batch 1:  1.37778
-0.451
-Epoch  6, CIFAR-10 Batch 1:  1.17604
-0.4688
-Epoch  7, CIFAR-10 Batch 1:  1.02154
-0.482
-Epoch  8, CIFAR-10 Batch 1:  0.971462
-0.497
-Epoch  9, CIFAR-10 Batch 1:  0.878219
-0.4866
-Epoch 10, CIFAR-10 Batch 1:  0.696342
-0.5028
-Epoch 11, CIFAR-10 Batch 1:  0.707506
-0.4948
-Epoch 12, CIFAR-10 Batch 1:  0.672555
-0.4866
-Epoch 13, CIFAR-10 Batch 1:  0.655301
-0.4832
-Epoch 14, CIFAR-10 Batch 1:  0.592489
-0.5052
-Epoch 15, CIFAR-10 Batch 1:  0.522483
-0.5192
-Epoch 16, CIFAR-10 Batch 1:  0.463111
-0.5276
-Epoch 17, CIFAR-10 Batch 1:  0.427562
-0.538
-Epoch 18, CIFAR-10 Batch 1:  0.425345
-0.5144
-Epoch 19, CIFAR-10 Batch 1:  0.386894
-0.5044
-Epoch 20, CIFAR-10 Batch 1:  0.459915
-0.5016
-Epoch 21, CIFAR-10 Batch 1:  0.36652
-0.5248
-Epoch 22, CIFAR-10 Batch 1:  0.372264
-0.5234
-Epoch 23, CIFAR-10 Batch 1:  0.357833
-0.5168
-Epoch 24, CIFAR-10 Batch 1:  0.356946
-0.5082
-Epoch 25, CIFAR-10 Batch 1:  0.351723
-0.5278
-Epoch 26, CIFAR-10 Batch 1:  0.371362
-0.5348
-Epoch 27, CIFAR-10 Batch 1:  0.362686
-0.5296
-Epoch 28, CIFAR-10 Batch 1:  0.353849
-0.5364
-Epoch 29, CIFAR-10 Batch 1:  0.350626
-0.5422
-Epoch 30, CIFAR-10 Batch 1:  0.350089
-0.5302
-Epoch 31, CIFAR-10 Batch 1:  0.347959
-0.5326
-Epoch 32, CIFAR-10 Batch 1:  0.346829
-0.5396
-Epoch 33, CIFAR-10 Batch 1:  0.355857
-0.5128
-Epoch 34, CIFAR-10 Batch 1:  0.347358
-0.533
-Epoch 35, CIFAR-10 Batch 1:  0.349562
-0.5482
-Epoch 36, CIFAR-10 Batch 1:  0.346118
-0.5396
-Epoch 37, CIFAR-10 Batch 1:  0.348882
-0.5286
-Epoch 38, CIFAR-10 Batch 1:  0.348405
-0.5286
-Epoch 39, CIFAR-10 Batch 1:  0.346762
-0.5316
-Epoch 40, CIFAR-10 Batch 1:  0.347453
-0.5286
-Epoch 41, CIFAR-10 Batch 1:  0.349092
-0.5232
-Epoch 42, CIFAR-10 Batch 1:  0.345845
-0.5294
-Epoch 43, CIFAR-10 Batch 1:  0.346693
-0.5264
-Epoch 44, CIFAR-10 Batch 1:  0.345794
-0.5366
-Epoch 45, CIFAR-10 Batch 1:  0.346137
-0.5208
-Epoch 46, CIFAR-10 Batch 1:  0.34549
-0.53
-Epoch 47, CIFAR-10 Batch 1:  0.348598
-0.5298
-Epoch 48, CIFAR-10 Batch 1:  0.345646
+Epoch  1, CIFAR-10 Batch 1:  2.27508
+0.1734
+Epoch  2, CIFAR-10 Batch 1:  2.02912
+0.361
+Epoch  3, CIFAR-10 Batch 1:  1.75067
+0.4268
+Epoch  4, CIFAR-10 Batch 1:  1.54353
+0.4552
+Epoch  5, CIFAR-10 Batch 1:  1.28706
+0.4782
+Epoch  6, CIFAR-10 Batch 1:  1.07498
+0.5048
+Epoch  7, CIFAR-10 Batch 1:  0.914378
+0.5138
+Epoch  8, CIFAR-10 Batch 1:  0.869888
+0.5032
+Epoch  9, CIFAR-10 Batch 1:  0.694809
+0.5064
+Epoch 10, CIFAR-10 Batch 1:  0.62989
+0.5086
+Epoch 11, CIFAR-10 Batch 1:  0.497576
+0.529
+Epoch 12, CIFAR-10 Batch 1:  0.433289
+0.4888
+Epoch 13, CIFAR-10 Batch 1:  0.311948
+0.506
+Epoch 14, CIFAR-10 Batch 1:  0.26755
+0.5218
+Epoch 15, CIFAR-10 Batch 1:  0.227033
+0.5456
+Epoch 16, CIFAR-10 Batch 1:  0.194094
+0.5256
+Epoch 17, CIFAR-10 Batch 1:  0.18747
+0.5404
+Epoch 18, CIFAR-10 Batch 1:  0.133662
 0.5258
-Epoch 49, CIFAR-10 Batch 1:  0.34653
-0.539
-Epoch 50, CIFAR-10 Batch 1:  0.346541
-0.5158
+Epoch 19, CIFAR-10 Batch 1:  0.10673
+0.5362
+Epoch 20, CIFAR-10 Batch 1:  0.0960341
+0.5342
 </pre>
 </div>
 </div>
@@ -13004,7 +12944,7 @@ Epoch 50, CIFAR-10 Batch 1:  0.346541
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[183]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13045,506 +12985,206 @@ Epoch 50, CIFAR-10 Batch 1:  0.346541
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training...
-Epoch  1, CIFAR-10 Batch 1:  2.12488
-0.2694
-Epoch  1, CIFAR-10 Batch 2:  2.09388
-0.3652
-Epoch  1, CIFAR-10 Batch 3:  1.69555
-0.3952
-Epoch  1, CIFAR-10 Batch 4:  1.74513
-0.4246
-Epoch  1, CIFAR-10 Batch 5:  1.61553
-0.4434
-Epoch  2, CIFAR-10 Batch 1:  1.61038
-0.4562
-Epoch  2, CIFAR-10 Batch 2:  1.59676
-0.478
-Epoch  2, CIFAR-10 Batch 3:  1.48932
-0.4618
-Epoch  2, CIFAR-10 Batch 4:  1.37939
-0.491
-Epoch  2, CIFAR-10 Batch 5:  1.32416
-0.5096
-Epoch  3, CIFAR-10 Batch 1:  1.34892
-0.5044
-Epoch  3, CIFAR-10 Batch 2:  1.41264
-0.5128
-Epoch  3, CIFAR-10 Batch 3:  1.25797
-0.505
-Epoch  3, CIFAR-10 Batch 4:  1.21191
-0.5272
-Epoch  3, CIFAR-10 Batch 5:  1.06542
-0.5328
-Epoch  4, CIFAR-10 Batch 1:  1.00408
-0.573
-Epoch  4, CIFAR-10 Batch 2:  0.928656
-0.584
-Epoch  4, CIFAR-10 Batch 3:  0.76793
-0.587
-Epoch  4, CIFAR-10 Batch 4:  0.768468
-0.5958
-Epoch  4, CIFAR-10 Batch 5:  0.592012
-0.5862
-Epoch  5, CIFAR-10 Batch 1:  0.796083
-0.6036
-Epoch  5, CIFAR-10 Batch 2:  0.769975
-0.6098
-Epoch  5, CIFAR-10 Batch 3:  0.415092
+Epoch  1, CIFAR-10 Batch 1:  2.31385
+0.1302
+Epoch  1, CIFAR-10 Batch 2:  2.12833
+0.2402
+Epoch  1, CIFAR-10 Batch 3:  1.71721
+0.3594
+Epoch  1, CIFAR-10 Batch 4:  1.50535
+0.3998
+Epoch  1, CIFAR-10 Batch 5:  1.75369
+0.4302
+Epoch  2, CIFAR-10 Batch 1:  1.7411
+0.4324
+Epoch  2, CIFAR-10 Batch 2:  1.48008
+0.4432
+Epoch  2, CIFAR-10 Batch 3:  1.2756
+0.459
+Epoch  2, CIFAR-10 Batch 4:  1.26377
+0.4806
+Epoch  2, CIFAR-10 Batch 5:  1.1738
+0.5486
+Epoch  3, CIFAR-10 Batch 1:  1.21701
+0.5426
+Epoch  3, CIFAR-10 Batch 2:  1.05221
+0.5496
+Epoch  3, CIFAR-10 Batch 3:  0.832281
+0.5632
+Epoch  3, CIFAR-10 Batch 4:  0.995356
+0.5712
+Epoch  3, CIFAR-10 Batch 5:  0.896224
+0.5758
+Epoch  4, CIFAR-10 Batch 1:  0.970344
+0.5914
+Epoch  4, CIFAR-10 Batch 2:  0.904783
+0.594
+Epoch  4, CIFAR-10 Batch 3:  0.681914
+0.593
+Epoch  4, CIFAR-10 Batch 4:  0.785277
+0.5968
+Epoch  4, CIFAR-10 Batch 5:  0.641925
+0.6072
+Epoch  5, CIFAR-10 Batch 1:  0.78544
+0.621
+Epoch  5, CIFAR-10 Batch 2:  0.680898
 0.6174
-Epoch  5, CIFAR-10 Batch 4:  0.670362
-0.6202
-Epoch  5, CIFAR-10 Batch 5:  0.425032
-0.6206
-Epoch  6, CIFAR-10 Batch 1:  0.64073
-0.6268
-Epoch  6, CIFAR-10 Batch 2:  0.63558
-0.627
-Epoch  6, CIFAR-10 Batch 3:  0.329818
-0.6372
-Epoch  6, CIFAR-10 Batch 4:  0.566905
-0.6262
-Epoch  6, CIFAR-10 Batch 5:  0.330099
-0.6612
-Epoch  7, CIFAR-10 Batch 1:  0.609671
-0.6208
-Epoch  7, CIFAR-10 Batch 2:  0.580325
-0.6266
-Epoch  7, CIFAR-10 Batch 3:  0.247046
-0.656
-Epoch  7, CIFAR-10 Batch 4:  0.456029
-0.6408
-Epoch  7, CIFAR-10 Batch 5:  0.19239
-0.6586
-Epoch  8, CIFAR-10 Batch 1:  0.470569
-0.6474
-Epoch  8, CIFAR-10 Batch 2:  0.443312
-0.6334
-Epoch  8, CIFAR-10 Batch 3:  0.269326
-0.6576
-Epoch  8, CIFAR-10 Batch 4:  0.381719
-0.654
-Epoch  8, CIFAR-10 Batch 5:  0.168473
-0.6516
-Epoch  9, CIFAR-10 Batch 1:  0.465042
-0.6386
-Epoch  9, CIFAR-10 Batch 2:  0.343825
-0.6244
-Epoch  9, CIFAR-10 Batch 3:  0.1607
-0.6466
-Epoch  9, CIFAR-10 Batch 4:  0.335966
-0.644
-Epoch  9, CIFAR-10 Batch 5:  0.16084
-0.6426
-Epoch 10, CIFAR-10 Batch 1:  0.329363
-0.6576
-Epoch 10, CIFAR-10 Batch 2:  0.394687
-0.624
-Epoch 10, CIFAR-10 Batch 3:  0.123331
-0.6668
-Epoch 10, CIFAR-10 Batch 4:  0.206805
-0.6534
-Epoch 10, CIFAR-10 Batch 5:  0.169061
-0.6388
-Epoch 11, CIFAR-10 Batch 1:  0.326858
-0.654
-Epoch 11, CIFAR-10 Batch 2:  0.289045
-0.6376
-Epoch 11, CIFAR-10 Batch 3:  0.090826
-0.6664
-Epoch 11, CIFAR-10 Batch 4:  0.173306
-0.6504
-Epoch 11, CIFAR-10 Batch 5:  0.090676
-0.6424
-Epoch 12, CIFAR-10 Batch 1:  0.293105
-0.66
-Epoch 12, CIFAR-10 Batch 2:  0.203868
-0.6538
-Epoch 12, CIFAR-10 Batch 3:  0.102778
-0.6626
-Epoch 12, CIFAR-10 Batch 4:  0.174659
-0.6412
-Epoch 12, CIFAR-10 Batch 5:  0.106365
-0.6512
-Epoch 13, CIFAR-10 Batch 1:  0.233222
-0.661
-Epoch 13, CIFAR-10 Batch 2:  0.218799
-0.6622
-Epoch 13, CIFAR-10 Batch 3:  0.0757252
-0.657
-Epoch 13, CIFAR-10 Batch 4:  0.132442
-0.6496
-Epoch 13, CIFAR-10 Batch 5:  0.0605581
-0.651
-Epoch 14, CIFAR-10 Batch 1:  0.177937
-0.6568
-Epoch 14, CIFAR-10 Batch 2:  0.164577
-0.6448
-Epoch 14, CIFAR-10 Batch 3:  0.0693042
-0.661
-Epoch 14, CIFAR-10 Batch 4:  0.108676
-0.6276
-Epoch 14, CIFAR-10 Batch 5:  0.0443089
-0.648
-Epoch 15, CIFAR-10 Batch 1:  0.225973
-0.653
-Epoch 15, CIFAR-10 Batch 2:  0.145173
-0.6534
-Epoch 15, CIFAR-10 Batch 3:  0.0681357
-0.6402
-Epoch 15, CIFAR-10 Batch 4:  0.0963905
-0.6304
-Epoch 15, CIFAR-10 Batch 5:  0.0391875
-0.645
-Epoch 16, CIFAR-10 Batch 1:  0.157047
-0.6472
-Epoch 16, CIFAR-10 Batch 2:  0.1106
-0.6554
-Epoch 16, CIFAR-10 Batch 3:  0.0644089
-0.6476
-Epoch 16, CIFAR-10 Batch 4:  0.0806926
-0.625
-Epoch 16, CIFAR-10 Batch 5:  0.036847
-0.6262
-Epoch 17, CIFAR-10 Batch 1:  0.213164
-0.643
-Epoch 17, CIFAR-10 Batch 2:  0.0960416
-0.6598
-Epoch 17, CIFAR-10 Batch 3:  0.042772
-0.6656
-Epoch 17, CIFAR-10 Batch 4:  0.0612107
-0.6512
-Epoch 17, CIFAR-10 Batch 5:  0.0346546
-0.6358
-Epoch 18, CIFAR-10 Batch 1:  0.173356
-0.6586
-Epoch 18, CIFAR-10 Batch 2:  0.0617997
-0.6578
-Epoch 18, CIFAR-10 Batch 3:  0.0433957
-0.6414
-Epoch 18, CIFAR-10 Batch 4:  0.0810717
-0.6362
-Epoch 18, CIFAR-10 Batch 5:  0.0314355
-0.655
-Epoch 19, CIFAR-10 Batch 1:  0.135984
-0.6466
-Epoch 19, CIFAR-10 Batch 2:  0.102278
-0.6532
-Epoch 19, CIFAR-10 Batch 3:  0.0416836
-0.6412
-Epoch 19, CIFAR-10 Batch 4:  0.0370231
-0.6546
-Epoch 19, CIFAR-10 Batch 5:  0.0213475
-0.655
-Epoch 20, CIFAR-10 Batch 1:  0.10675
-0.6428
-Epoch 20, CIFAR-10 Batch 2:  0.0784356
-0.667
-Epoch 20, CIFAR-10 Batch 3:  0.0198041
-0.6628
-Epoch 20, CIFAR-10 Batch 4:  0.0298209
-0.6458
-Epoch 20, CIFAR-10 Batch 5:  0.030662
-0.6666
-Epoch 21, CIFAR-10 Batch 1:  0.114141
-0.6374
-Epoch 21, CIFAR-10 Batch 2:  0.0629929
-0.6452
-Epoch 21, CIFAR-10 Batch 3:  0.0174128
-0.6596
-Epoch 21, CIFAR-10 Batch 4:  0.0246043
-0.65
-Epoch 21, CIFAR-10 Batch 5:  0.0296756
-0.6526
-Epoch 22, CIFAR-10 Batch 1:  0.0917799
-0.6462
-Epoch 22, CIFAR-10 Batch 2:  0.0877831
-0.6544
-Epoch 22, CIFAR-10 Batch 3:  0.0113676
-0.6542
-Epoch 22, CIFAR-10 Batch 4:  0.0240271
-0.6536
-Epoch 22, CIFAR-10 Batch 5:  0.0246325
-0.6324
-Epoch 23, CIFAR-10 Batch 1:  0.0877432
-0.641
-Epoch 23, CIFAR-10 Batch 2:  0.0665471
-0.643
-Epoch 23, CIFAR-10 Batch 3:  0.00695233
-0.6518
-Epoch 23, CIFAR-10 Batch 4:  0.0316499
-0.653
-Epoch 23, CIFAR-10 Batch 5:  0.016706
-0.6566
-Epoch 24, CIFAR-10 Batch 1:  0.0702157
-0.6468
-Epoch 24, CIFAR-10 Batch 2:  0.044186
-0.6444
-Epoch 24, CIFAR-10 Batch 3:  0.00934952
-0.6656
-Epoch 24, CIFAR-10 Batch 4:  0.0282654
-0.6466
-Epoch 24, CIFAR-10 Batch 5:  0.00918084
-0.657
-Epoch 25, CIFAR-10 Batch 1:  0.056469
-0.6448
-Epoch 25, CIFAR-10 Batch 2:  0.0414025
-0.6282
-Epoch 25, CIFAR-10 Batch 3:  0.0103003
-0.6606
-Epoch 25, CIFAR-10 Batch 4:  0.0205896
-0.6354
-Epoch 25, CIFAR-10 Batch 5:  0.0146275
-0.6588
-Epoch 26, CIFAR-10 Batch 1:  0.0572667
-0.6374
-Epoch 26, CIFAR-10 Batch 2:  0.0378487
-0.6226
-Epoch 26, CIFAR-10 Batch 3:  0.012594
-0.663
-Epoch 26, CIFAR-10 Batch 4:  0.0308213
-0.6314
-Epoch 26, CIFAR-10 Batch 5:  0.0133038
-0.655
-Epoch 27, CIFAR-10 Batch 1:  0.0334586
-0.6324
-Epoch 27, CIFAR-10 Batch 2:  0.0432342
-0.62
-Epoch 27, CIFAR-10 Batch 3:  0.00673856
-0.6384
-Epoch 27, CIFAR-10 Batch 4:  0.0254697
-0.6292
-Epoch 27, CIFAR-10 Batch 5:  0.00802047
-0.6486
-Epoch 28, CIFAR-10 Batch 1:  0.0253905
-0.6438
-Epoch 28, CIFAR-10 Batch 2:  0.0212932
-0.6222
-Epoch 28, CIFAR-10 Batch 3:  0.00612896
+Epoch  5, CIFAR-10 Batch 3:  0.442299
+0.6144
+Epoch  5, CIFAR-10 Batch 4:  0.73348
+0.6046
+Epoch  5, CIFAR-10 Batch 5:  0.479113
+0.6144
+Epoch  6, CIFAR-10 Batch 1:  0.625024
 0.642
-Epoch 28, CIFAR-10 Batch 4:  0.00634875
-0.649
-Epoch 28, CIFAR-10 Batch 5:  0.0068305
-0.6558
-Epoch 29, CIFAR-10 Batch 1:  0.0203156
-0.652
-Epoch 29, CIFAR-10 Batch 2:  0.0183293
-0.6292
-Epoch 29, CIFAR-10 Batch 3:  0.0229039
-0.6498
-Epoch 29, CIFAR-10 Batch 4:  0.00345189
-0.6426
-Epoch 29, CIFAR-10 Batch 5:  0.0021359
-0.6534
-Epoch 30, CIFAR-10 Batch 1:  0.0200992
-0.6492
-Epoch 30, CIFAR-10 Batch 2:  0.0152821
-0.6204
-Epoch 30, CIFAR-10 Batch 3:  0.0130299
-0.6446
-Epoch 30, CIFAR-10 Batch 4:  0.00464255
-0.647
-Epoch 30, CIFAR-10 Batch 5:  0.00607413
-0.6598
-Epoch 31, CIFAR-10 Batch 1:  0.0113785
-0.663
-Epoch 31, CIFAR-10 Batch 2:  0.0214773
-0.6364
-Epoch 31, CIFAR-10 Batch 3:  0.0104714
-0.6538
-Epoch 31, CIFAR-10 Batch 4:  0.00436364
-0.6456
-Epoch 31, CIFAR-10 Batch 5:  0.00860327
-0.6504
-Epoch 32, CIFAR-10 Batch 1:  0.0103145
-0.6536
-Epoch 32, CIFAR-10 Batch 2:  0.00903828
-0.6472
-Epoch 32, CIFAR-10 Batch 3:  0.0112148
-0.6496
-Epoch 32, CIFAR-10 Batch 4:  0.0123102
-0.641
-Epoch 32, CIFAR-10 Batch 5:  0.00234272
-0.6602
-Epoch 33, CIFAR-10 Batch 1:  0.00680291
-0.6526
-Epoch 33, CIFAR-10 Batch 2:  0.0171326
-0.6276
-Epoch 33, CIFAR-10 Batch 3:  0.0178632
-0.6554
-Epoch 33, CIFAR-10 Batch 4:  0.00528621
-0.65
-Epoch 33, CIFAR-10 Batch 5:  0.00460271
-0.6636
-Epoch 34, CIFAR-10 Batch 1:  0.00586678
-0.658
-Epoch 34, CIFAR-10 Batch 2:  0.0129653
-0.6286
-Epoch 34, CIFAR-10 Batch 3:  0.0135789
-0.649
-Epoch 34, CIFAR-10 Batch 4:  0.00276759
-0.6458
-Epoch 34, CIFAR-10 Batch 5:  0.00528512
-0.6552
-Epoch 35, CIFAR-10 Batch 1:  0.00265863
-0.65
-Epoch 35, CIFAR-10 Batch 2:  0.0153361
-0.6376
-Epoch 35, CIFAR-10 Batch 3:  0.00986852
-0.6546
-Epoch 35, CIFAR-10 Batch 4:  0.00289449
-0.6588
-Epoch 35, CIFAR-10 Batch 5:  0.00439367
-0.6538
-Epoch 36, CIFAR-10 Batch 1:  0.00485187
-0.6406
-Epoch 36, CIFAR-10 Batch 2:  0.00603805
-0.641
-Epoch 36, CIFAR-10 Batch 3:  0.00605168
-0.6558
-Epoch 36, CIFAR-10 Batch 4:  0.00131788
-0.6508
-Epoch 36, CIFAR-10 Batch 5:  0.00316913
-0.6548
-Epoch 37, CIFAR-10 Batch 1:  0.00370362
-0.653
-Epoch 37, CIFAR-10 Batch 2:  0.00879249
-0.6406
-Epoch 37, CIFAR-10 Batch 3:  0.00220227
-0.649
-Epoch 37, CIFAR-10 Batch 4:  0.00341247
-0.6498
-Epoch 37, CIFAR-10 Batch 5:  0.00549823
-0.645
-Epoch 38, CIFAR-10 Batch 1:  0.00786608
-0.6528
-Epoch 38, CIFAR-10 Batch 2:  0.00646769
-0.6462
-Epoch 38, CIFAR-10 Batch 3:  0.00437354
-0.6458
-Epoch 38, CIFAR-10 Batch 4:  0.00106752
-0.6474
-Epoch 38, CIFAR-10 Batch 5:  0.00066571
-0.6542
-Epoch 39, CIFAR-10 Batch 1:  0.0164218
-0.6406
-Epoch 39, CIFAR-10 Batch 2:  0.00185209
-0.641
-Epoch 39, CIFAR-10 Batch 3:  0.00165709
-0.6458
-Epoch 39, CIFAR-10 Batch 4:  0.00515392
-0.6368
-Epoch 39, CIFAR-10 Batch 5:  0.00406587
-0.653
-Epoch 40, CIFAR-10 Batch 1:  0.0259557
-0.635
-Epoch 40, CIFAR-10 Batch 2:  0.00278924
-0.636
-Epoch 40, CIFAR-10 Batch 3:  0.0024274
-0.652
-Epoch 40, CIFAR-10 Batch 4:  0.0020549
-0.6428
-Epoch 40, CIFAR-10 Batch 5:  0.00289953
-0.663
-Epoch 41, CIFAR-10 Batch 1:  0.00580934
-0.6418
-Epoch 41, CIFAR-10 Batch 2:  0.0145548
-0.6386
-Epoch 41, CIFAR-10 Batch 3:  0.000960974
-0.648
-Epoch 41, CIFAR-10 Batch 4:  0.00635524
-0.6464
-Epoch 41, CIFAR-10 Batch 5:  0.00104715
-0.6658
-Epoch 42, CIFAR-10 Batch 1:  0.00329554
-0.6406
-Epoch 42, CIFAR-10 Batch 2:  0.005483
-0.6418
-Epoch 42, CIFAR-10 Batch 3:  0.00250548
-0.6576
-Epoch 42, CIFAR-10 Batch 4:  0.0013761
-0.6474
-Epoch 42, CIFAR-10 Batch 5:  0.0181531
-0.6634
-Epoch 43, CIFAR-10 Batch 1:  0.0207099
-0.6364
-Epoch 43, CIFAR-10 Batch 2:  0.00827123
-0.6436
-Epoch 43, CIFAR-10 Batch 3:  0.00942919
-0.668
-Epoch 43, CIFAR-10 Batch 4:  0.00677714
-0.6406
-Epoch 43, CIFAR-10 Batch 5:  0.000596413
-0.6602
-Epoch 44, CIFAR-10 Batch 1:  0.00730002
-0.64
-Epoch 44, CIFAR-10 Batch 2:  0.0088168
+Epoch  6, CIFAR-10 Batch 2:  0.608205
+0.5892
+Epoch  6, CIFAR-10 Batch 3:  0.311974
+0.6134
+Epoch  6, CIFAR-10 Batch 4:  0.458026
 0.6416
-Epoch 44, CIFAR-10 Batch 3:  0.00439379
-0.6478
-Epoch 44, CIFAR-10 Batch 4:  0.00532439
-0.65
-Epoch 44, CIFAR-10 Batch 5:  0.00410457
-0.661
-Epoch 45, CIFAR-10 Batch 1:  0.0133649
-0.6416
-Epoch 45, CIFAR-10 Batch 2:  0.0137003
-0.636
-Epoch 45, CIFAR-10 Batch 3:  0.00458423
-0.6594
-Epoch 45, CIFAR-10 Batch 4:  0.00185295
-0.6552
-Epoch 45, CIFAR-10 Batch 5:  0.00479631
-0.6534
-Epoch 46, CIFAR-10 Batch 1:  0.00205411
+Epoch  6, CIFAR-10 Batch 5:  0.351959
+0.624
+Epoch  7, CIFAR-10 Batch 1:  0.549105
+0.6378
+Epoch  7, CIFAR-10 Batch 2:  0.521713
+0.634
+Epoch  7, CIFAR-10 Batch 3:  0.263708
+0.6132
+Epoch  7, CIFAR-10 Batch 4:  0.315953
 0.6506
-Epoch 46, CIFAR-10 Batch 2:  0.00819906
-0.6472
-Epoch 46, CIFAR-10 Batch 3:  0.0043839
-0.6552
-Epoch 46, CIFAR-10 Batch 4:  0.000801914
-0.6618
-Epoch 46, CIFAR-10 Batch 5:  0.00055763
-0.6654
-Epoch 47, CIFAR-10 Batch 1:  0.00478155
-0.6528
-Epoch 47, CIFAR-10 Batch 2:  0.0192061
-0.6626
-Epoch 47, CIFAR-10 Batch 3:  0.00190021
-0.6424
-Epoch 47, CIFAR-10 Batch 4:  0.000484637
-0.6546
-Epoch 47, CIFAR-10 Batch 5:  0.000959203
-0.6622
-Epoch 48, CIFAR-10 Batch 1:  0.00684765
-0.6512
-Epoch 48, CIFAR-10 Batch 2:  0.00158857
-0.6564
-Epoch 48, CIFAR-10 Batch 3:  0.000458232
-0.661
-Epoch 48, CIFAR-10 Batch 4:  0.000653035
-0.647
-Epoch 48, CIFAR-10 Batch 5:  0.00300685
-0.6606
-Epoch 49, CIFAR-10 Batch 1:  0.00224163
-0.6554
-Epoch 49, CIFAR-10 Batch 2:  0.00643977
-0.6494
-Epoch 49, CIFAR-10 Batch 3:  0.000358407
-0.652
-Epoch 49, CIFAR-10 Batch 4:  0.00138815
-0.6488
-Epoch 49, CIFAR-10 Batch 5:  0.00166337
-0.6568
-Epoch 50, CIFAR-10 Batch 1:  0.00105024
-0.6576
-Epoch 50, CIFAR-10 Batch 2:  0.00876519
+Epoch  7, CIFAR-10 Batch 5:  0.279952
+0.6532
+Epoch  8, CIFAR-10 Batch 1:  0.482783
+0.6414
+Epoch  8, CIFAR-10 Batch 2:  0.4386
+0.6374
+Epoch  8, CIFAR-10 Batch 3:  0.191339
+0.6282
+Epoch  8, CIFAR-10 Batch 4:  0.266745
+0.6364
+Epoch  8, CIFAR-10 Batch 5:  0.181885
+0.6454
+Epoch  9, CIFAR-10 Batch 1:  0.424447
+0.6414
+Epoch  9, CIFAR-10 Batch 2:  0.323497
+0.6464
+Epoch  9, CIFAR-10 Batch 3:  0.181793
+0.6478
+Epoch  9, CIFAR-10 Batch 4:  0.221187
+0.6356
+Epoch  9, CIFAR-10 Batch 5:  0.178206
+0.6336
+Epoch 10, CIFAR-10 Batch 1:  0.376357
+0.6438
+Epoch 10, CIFAR-10 Batch 2:  0.245876
+0.622
+Epoch 10, CIFAR-10 Batch 3:  0.138111
+0.6458
+Epoch 10, CIFAR-10 Batch 4:  0.248237
+0.6294
+Epoch 10, CIFAR-10 Batch 5:  0.139498
+0.6542
+Epoch 11, CIFAR-10 Batch 1:  0.357572
+0.653
+Epoch 11, CIFAR-10 Batch 2:  0.176634
+0.6354
+Epoch 11, CIFAR-10 Batch 3:  0.133849
+0.6402
+Epoch 11, CIFAR-10 Batch 4:  0.161129
+0.6388
+Epoch 11, CIFAR-10 Batch 5:  0.142729
+0.649
+Epoch 12, CIFAR-10 Batch 1:  0.279775
+0.6508
+Epoch 12, CIFAR-10 Batch 2:  0.157063
+0.6444
+Epoch 12, CIFAR-10 Batch 3:  0.132678
+0.6456
+Epoch 12, CIFAR-10 Batch 4:  0.120302
+0.6342
+Epoch 12, CIFAR-10 Batch 5:  0.141813
+0.6402
+Epoch 13, CIFAR-10 Batch 1:  0.26861
+0.6466
+Epoch 13, CIFAR-10 Batch 2:  0.116433
+0.6466
+Epoch 13, CIFAR-10 Batch 3:  0.0845762
+0.6336
+Epoch 13, CIFAR-10 Batch 4:  0.0733306
+0.6478
+Epoch 13, CIFAR-10 Batch 5:  0.0537298
+0.6392
+Epoch 14, CIFAR-10 Batch 1:  0.23715
+0.6476
+Epoch 14, CIFAR-10 Batch 2:  0.117939
+0.6384
+Epoch 14, CIFAR-10 Batch 3:  0.0494551
 0.6416
-Epoch 50, CIFAR-10 Batch 3:  0.00101615
-0.6526
-Epoch 50, CIFAR-10 Batch 4:  0.00461764
-0.6488
-Epoch 50, CIFAR-10 Batch 5:  0.00558517
-0.6518
+Epoch 14, CIFAR-10 Batch 4:  0.0625429
+0.6382
+Epoch 14, CIFAR-10 Batch 5:  0.0731616
+0.6418
+Epoch 15, CIFAR-10 Batch 1:  0.203836
+0.6282
+Epoch 15, CIFAR-10 Batch 2:  0.0888069
+0.6362
+Epoch 15, CIFAR-10 Batch 3:  0.0824706
+0.634
+Epoch 15, CIFAR-10 Batch 4:  0.0919783
+0.6162
+Epoch 15, CIFAR-10 Batch 5:  0.0895462
+0.621
+Epoch 16, CIFAR-10 Batch 1:  0.1896
+0.6506
+Epoch 16, CIFAR-10 Batch 2:  0.0784502
+0.6388
+Epoch 16, CIFAR-10 Batch 3:  0.0501892
+0.6316
+Epoch 16, CIFAR-10 Batch 4:  0.0691045
+0.6158
+Epoch 16, CIFAR-10 Batch 5:  0.052213
+0.633
+Epoch 17, CIFAR-10 Batch 1:  0.154993
+0.6452
+Epoch 17, CIFAR-10 Batch 2:  0.0551188
+0.6442
+Epoch 17, CIFAR-10 Batch 3:  0.0564916
+0.6144
+Epoch 17, CIFAR-10 Batch 4:  0.0644978
+0.6204
+Epoch 17, CIFAR-10 Batch 5:  0.0431463
+0.6368
+Epoch 18, CIFAR-10 Batch 1:  0.0897736
+0.6398
+Epoch 18, CIFAR-10 Batch 2:  0.0314126
+0.6326
+Epoch 18, CIFAR-10 Batch 3:  0.0429011
+0.6102
+Epoch 18, CIFAR-10 Batch 4:  0.0351712
+0.6276
+Epoch 18, CIFAR-10 Batch 5:  0.032796
+0.6412
+Epoch 19, CIFAR-10 Batch 1:  0.0744402
+0.6482
+Epoch 19, CIFAR-10 Batch 2:  0.0228458
+0.6394
+Epoch 19, CIFAR-10 Batch 3:  0.0547254
+0.6116
+Epoch 19, CIFAR-10 Batch 4:  0.0421137
+0.6216
+Epoch 19, CIFAR-10 Batch 5:  0.029322
+0.6464
+Epoch 20, CIFAR-10 Batch 1:  0.0967451
+0.6498
+Epoch 20, CIFAR-10 Batch 2:  0.0190968
+0.6368
+Epoch 20, CIFAR-10 Batch 3:  0.0317395
+0.6168
+Epoch 20, CIFAR-10 Batch 4:  0.0342692
+0.6178
+Epoch 20, CIFAR-10 Batch 5:  0.0229919
+0.6424
 </pre>
 </div>
 </div>
